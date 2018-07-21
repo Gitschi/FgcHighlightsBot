@@ -40,7 +40,7 @@ function GetTweets(searchTerm){
         score = calcScore(data.statuses[i].retweet_count, data.statuses[i].favorite_count);
   
         // Only use tweets that are older than 30 mins and younger than 90 mins
-        if(lifeTime > 30 && lifeTime <= 30 + (intervalTime / 60000)){
+        if(lifeTime >= 31 && lifeTime <= 30 + (intervalTime / 60000)){
           tweetArray.push(
             {"username": data.statuses[i].user.name, "id": data.statuses[i].id_str, "score": score, "lifeTime": lifeTime}
           );
