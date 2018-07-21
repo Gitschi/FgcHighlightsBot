@@ -3,11 +3,10 @@ var env = require("./env"); // Imports API keys
 var T = new Twit(env.keys); // Uses keys as argument and creates object
 tweetArray = []; // Will hold our relevant tweets
 
-
 // Keywords that the code will look for
 var keywordArray = [
-  '#FGC', '#格ゲー', '#SFVAE', '#StreetFighter', '#Tekken7', 'Tekken',
-  '#SC6', 'SCVI', 'SoulCalibur', '#KillerInstinct', '#DBFZ',
+  '#FGC', '#格ゲー', '#SFVAE', '#StreetFighter', '#Tekken7', '#Tekken',
+  '#SC6', '#SCVI', '#SoulCalibur', '#KillerInstinct', '#DBFZ',
   '#FEXL', '#SSBU', '#SmashBrosUltimate', '#GGXRD', '#GuiltyGear'
 ]
 var getAmount = 100; // Sets how many results will be returned upon search
