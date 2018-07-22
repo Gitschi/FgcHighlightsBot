@@ -1,7 +1,7 @@
 var Twit = require('twit');
 var env = require("./env"); // Imports API keys
 var T = new Twit(env.keys); // Uses keys as argument and creates object
-tweetArray = []; // Will hold our relevant tweets
+var tweetArray = []; // Will hold our relevant tweets
 
 // Keywords that the code will look for
 var keywordArray = [
@@ -16,6 +16,7 @@ var intervalTime = 30 * 60 * 1000; // first number will define minutes
 setInterval(startProcess, intervalTime);
 
 function startProcess(){
+  tweetArray = [];
   // Passes on search terms and starts process
   for(let i = 0; i < keywordArray.length; i++){
     GetTweets(keywordArray[i]);
