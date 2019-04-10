@@ -5,7 +5,7 @@ var tweetArray = []; // Will hold our relevant tweets
 
 // Keywords that the code will look for
 var keywordArray = [
-  '#FGC', '#格ゲー', '#SFVAE', '#StreetFighter', '#Tekken7', '#Tekken',
+  '#FGC', '#格ゲー', '#SFVAE', '#StreetFighter', '#StreetFighterV', '#SFV', '#Tekken7', '#Tekken',
   '#SC6', '#SCVI', '#SoulCalibur', '#KillerInstinct', '#DBFZ',
   '#FEXL', '#SSBU', '#SmashBrosUltimate', '#GGXRD', '#GuiltyGear'
 ]
